@@ -36,8 +36,13 @@ public class OfficeServlet extends HttpServlet {
 			String password = request.getParameter("password");
 			String xm = request.getParameter("xm");
 			outMap.putAll(OfficeManager.GetScore(tempUrl, username, xm,password));
-		}else if("".equals(action)){
-			
+		}else if("getelective".equals(action)){//获取选课成绩
+			System.out.println("action=getelective");
+			String tempUrl = request.getParameter("tempUrl");
+			String username = request.getParameter("username");
+			String password = request.getParameter("password");
+			String xm = request.getParameter("xm");
+			outMap.putAll(OfficeManager.GetElective(tempUrl, username, xm,password));
 		}
 		CommonUtil.renderJson(response, outMap);
 		outMap.clear();

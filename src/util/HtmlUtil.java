@@ -11,6 +11,7 @@ import org.jsoup.select.Elements;
 import exception.LibException;
 import exception.OutOfLoginException;
 
+import bean.domain.web.ElectiveCourseColumn;
 import bean.domain.web.LibUserInfo;
 import bean.domain.web.ScoreColumn;
 import bean.format.LibBorrowState;
@@ -115,7 +116,42 @@ public class HtmlUtil {
 		}
 	}
 
+	public static List<ElectiveCourseColumn> parseElectiveHtml(String html) throws LibException, OutOfLoginException {
+		if(html == null){
+			throw new LibException(504, "获取的html为空");
+		}else{
+			Document doc = Jsoup.parse(html);
+			Element tag = doc.getElementById("DBGrid");
+			if (tag == null) {
+				throw new OutOfLoginException();
+			} else {
+				List<ElectiveCourseColumn> list = new ArrayList<ElectiveCourseColumn>();
+				Elements trs = doc.getElementById("DBGrid").select("tr");
+				for (int i = 1; i < trs.size(); i++) {
+					Element tr = trs.get(i);
+					ElectiveCourseColumn column = new ElectiveCourseColumn(tr
+							.child(0).text(), tr.child(1).text(), tr.child(2)
+							.child(0).text(), tr.child(3).text(), tr.child(4)
+							.text(), tr.child(5).child(0).text(), tr.child(6)
+							.text(), tr.child(7).text(), tr.child(8).child(0)
+							.text(), tr.child(9).text(), tr.child(10).text(), tr
+							.child(11).text(), tr.child(12).text(), tr.child(13)
+							.text(), tr.child(14).text());
+					list.add(column);
+				}
+				return list;
+			}
+		
+		}
+	}
 
+	/**
+	 * 把获取成绩的html页面封装成bean
+	 * @param html
+	 * @return
+	 * @throws LibException
+	 * @throws OutOfLoginException
+	 */
 	public static List<ScoreColumn> parseScoreHtml(String html) throws LibException, OutOfLoginException {
 		if(html == null){
 			throw new LibException(504, "获取的html为空");
