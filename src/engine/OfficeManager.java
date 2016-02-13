@@ -13,11 +13,11 @@ import org.apache.http.impl.client.HttpClients;
 
 import util.HtmlUtil;
 import util.MyHttpUtil;
-import bean.domain.web.ElectiveCourseColumn;
-import bean.domain.web.ScoreColumn;
-import bean.format.OfficeLogin.OfficeBehave;
+import bean.OfficeLogin.OfficeBehave;
 import bean.http.NetReceiverData;
 import bean.http.NetSendData;
+import bean.office.ElectiveCourseColumn;
+import bean.office.ScoreColumn;
 import exception.LibException;
 import exception.OutOfLoginException;
 
@@ -51,7 +51,7 @@ public class OfficeManager {
 	public static Map<String,Object> GetScore(
 			String tempUrl, String username,String xm, String password) {
 		try {
-//			System.out.println("进入getscore方法,tempUrl="+tempUrl);
+			System.out.println("进入getscore方法,tempUrl="+tempUrl);
 			String xm1  = URLEncoder.encode(xm,"gb2312");
 //			System.out.println("tempUrl="+tempUrl+"--username="+username+"--password="+password+"--xm="+xm1);
 			Map<String, OfficeBehave> officeBehaves = UserManager.getOfficeBehaves();

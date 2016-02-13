@@ -1,9 +1,9 @@
-package bean.format;
+package bean;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import bean.domain.web.LibUserInfo;
+import bean.lib.LibUserInfo;
 
 public class Login {
 	/**

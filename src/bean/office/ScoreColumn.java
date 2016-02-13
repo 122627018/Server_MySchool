@@ -1,4 +1,4 @@
-package bean.domain.web;
+package bean.office;
 
 public class ScoreColumn {
 	/**

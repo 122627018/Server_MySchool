@@ -1,4 +1,4 @@
-package bean.response;
+package bean.office.format;
 
 @Deprecated
 public class PicCode {

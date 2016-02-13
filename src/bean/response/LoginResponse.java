@@ -3,7 +3,7 @@ package bean.response;
 import java.util.HashMap;
 import java.util.Map;
 
-import bean.domain.web.LibUserInfo;
+import bean.lib.LibUserInfo;
 
 @Deprecated
 public class LoginResponse {

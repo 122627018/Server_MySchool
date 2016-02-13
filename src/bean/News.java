@@ -1,4 +1,4 @@
-package bean.domain;
+package bean;
 
 public class News {
 

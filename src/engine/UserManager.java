@@ -12,12 +12,12 @@ import util.ConnectionUtil;
 import util.HtmlUtil;
 import util.MyHttpUtil;
 
+import bean.OfficeLogin;
 import bean.User;
+import bean.User1;
+import bean.OfficeLogin.OfficeBehave;
 import bean.User.UserCommonInfo;
-import bean.domain.User1;
-import bean.domain.User1.OfficeUserInfo;
-import bean.format.OfficeLogin;
-import bean.format.OfficeLogin.OfficeBehave;
+import bean.User1.OfficeUserInfo;
 import bean.http.NetReceiverData;
 import bean.http.NetSendData;
 

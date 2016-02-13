@@ -9,7 +9,7 @@ import java.util.List;
 import util.ConnectionUtil;
 
 
-import bean.domain.LostItem;
+import bean.LostItem;
 
 public class LostItemManager {
 

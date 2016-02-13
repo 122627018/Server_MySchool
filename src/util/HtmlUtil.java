@@ -11,12 +11,12 @@ import org.jsoup.select.Elements;
 import exception.LibException;
 import exception.OutOfLoginException;
 
-import bean.domain.web.ElectiveCourseColumn;
-import bean.domain.web.LibUserInfo;
-import bean.domain.web.ScoreColumn;
-import bean.format.LibBorrowState;
-import bean.format.Login;
-import bean.format.LibBorrowState.BookBorrowedState;
+import bean.Login;
+import bean.lib.LibUserInfo;
+import bean.lib.format.LibBorrowState;
+import bean.lib.format.LibBorrowState.BookBorrowedState;
+import bean.office.ElectiveCourseColumn;
+import bean.office.ScoreColumn;
 
 public class HtmlUtil {
 

@@ -1,4 +1,4 @@
-package bean.format;
+package bean.lib.format;
 
 import java.util.ArrayList;
 import java.util.List;

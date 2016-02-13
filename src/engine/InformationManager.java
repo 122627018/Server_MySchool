@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import util.ConnectionUtil;
 
-import bean.domain.News;
+import bean.News;
 
 
 public class InformationManager {

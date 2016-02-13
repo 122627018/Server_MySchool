@@ -1,4 +1,4 @@
-package bean.domain;
+package bean;
 
 /**
  * 用户实体：

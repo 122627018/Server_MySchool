@@ -1,6 +1,7 @@
-package bean.domain;
+package bean;
 
 import bean.User.UserCommonInfo;
+
 
 public class LostItem {
 

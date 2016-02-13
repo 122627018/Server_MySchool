@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-import bean.domain.News;
+import bean.News;
 
 import engine.InformationManager;
 

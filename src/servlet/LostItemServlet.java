@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import engine.LostItemManager;
 
-import bean.domain.LostItem;
+import bean.LostItem;
 
 import util.CommonUtil;
 

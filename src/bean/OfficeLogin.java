@@ -1,9 +1,8 @@
-package bean.format;
+package bean;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import bean.domain.User1;
 
 /**
  * 实体：

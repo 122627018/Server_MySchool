@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import bean.domain.CommentInfo;
-import bean.domain.CommentInfo.ReplyComment;
+import bean.CommentInfo;
+import bean.CommentInfo.ReplyComment;
 
 import util.ConnectionUtil;
 

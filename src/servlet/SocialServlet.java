@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import util.CommonUtil;
 
-import bean.domain.CommentInfo;
-import bean.domain.Social;
+import bean.CommentInfo;
+import bean.Social;
 
 import engine.CommentManager;
 import engine.SocialManager;
