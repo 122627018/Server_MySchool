@@ -11,10 +11,10 @@ import org.jsoup.select.Elements;
 import exception.LibException;
 import exception.OutOfLoginException;
 
-import bean.Login;
+import bean.lib.BookBorrowedState;
 import bean.lib.LibUserInfo;
 import bean.lib.format.LibBorrowState;
-import bean.lib.format.LibBorrowState.BookBorrowedState;
+import bean.lib.format.LoginFormat;
 import bean.office.ElectiveCourseColumn;
 import bean.office.ScoreColumn;
 
@@ -38,7 +38,7 @@ public class HtmlUtil {
 	 * @param html
 	 * @throws LibException 
 	 */
-	public static void FZHasLoginPage(Login result,
+	public static void parseLibLoginHtml(LoginFormat result,
 			String html) throws LibException {
 		Document doc = Jsoup.parse(html);
 		Element userInfoContent = doc.getElementById("userInfoContent");
